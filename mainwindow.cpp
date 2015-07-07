@@ -23,12 +23,12 @@ void MainWindow::on_layer_valueChanged(int arg1){
 const uint max_absolute_index=48*2+96;
 void MainWindow::on_pushButton_clicked(){
 	uint abs_index=(ui->layer->value()-1)*48 + ui->detector->value() - 1;
-	ui->block->setValue((abs_index/32)+1);
+	ui->block->setValue(abs_index/32);
 	ui->slot->setValue(abs_index%32);
 }
 
 void MainWindow::on_pushButton_2_clicked(){
-	uint abs_index=(ui->block->value()-1)*32+ui->slot->value();
+	uint abs_index=ui->block->value()*32+ui->slot->value();
 	uint layer_no=abs_index/48;
 	if(layer_no>2)
 		layer_no=2;//last layer has more detectors
