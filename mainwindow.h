@@ -16,11 +16,13 @@ public:
 	~MainWindow();
 
 private slots:
-	void on_layer_valueChanged(int arg1);
-
 	void on_pushButton_clicked();
 
 	void on_pushButton_2_clicked();
+
+	void on_pushButton_3_clicked();
+
+	void on_layer_currentIndexChanged(int index);
 
 private:
 	Ui::MainWindow *ui;

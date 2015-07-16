@@ -32,37 +32,18 @@
       <x>10</x>
       <y>0</y>
       <width>181</width>
-      <height>171</height>
+      <height>111</height>
      </rect>
     </property>
     <property name="title">
      <string>Detector Index</string>
     </property>
-    <widget class="QSpinBox" name="layer">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>60</y>
-       <width>81</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-     <property name="minimum">
-      <number>1</number>
-     </property>
-     <property name="maximum">
-      <number>3</number>
-     </property>
-    </widget>
     <widget class="QSpinBox" name="detector">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>120</y>
-       <width>81</width>
+       <x>70</x>
+       <y>70</y>
+       <width>51</width>
        <height>23</height>
       </rect>
      </property>
@@ -79,10 +60,10 @@
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>50</x>
+       <x>10</x>
        <y>40</y>
-       <width>59</width>
-       <height>14</height>
+       <width>51</width>
+       <height>16</height>
       </rect>
      </property>
      <property name="text">
@@ -92,8 +73,8 @@
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>100</y>
+       <x>10</x>
+       <y>70</y>
        <width>59</width>
        <height>14</height>
       </rect>
@@ -102,43 +83,98 @@
       <string>Detector</string>
      </property>
     </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>80</y>
+       <width>31</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>59</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Side</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="sidebox">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>20</y>
+       <width>51</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>A</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>B</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="layer">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>40</y>
+       <width>51</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </item>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>230</x>
       <y>0</y>
-      <width>171</width>
-      <height>171</height>
+      <width>181</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="title">
      <string>HV slot index</string>
     </property>
-    <widget class="QSpinBox" name="block">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>60</y>
-       <width>71</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="minimum">
-      <number>0</number>
-     </property>
-     <property name="maximum">
-      <number>5</number>
-     </property>
-     <property name="value">
-      <number>0</number>
-     </property>
-    </widget>
     <widget class="QSpinBox" name="slot">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>120</y>
+       <x>90</x>
+       <y>60</y>
        <width>71</width>
        <height>23</height>
       </rect>
@@ -150,10 +186,10 @@
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>40</y>
-       <width>59</width>
-       <height>14</height>
+       <x>30</x>
+       <y>30</y>
+       <width>51</width>
+       <height>16</height>
       </rect>
      </property>
      <property name="text">
@@ -163,8 +199,8 @@
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>100</y>
+       <x>30</x>
+       <y>60</y>
        <width>59</width>
        <height>14</height>
       </rect>
@@ -173,32 +209,134 @@
       <string>Slot</string>
      </property>
     </widget>
+    <widget class="QComboBox" name="blockbox">
+     <property name="geometry">
+      <rect>
+       <x>91</x>
+       <y>30</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>4</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>6</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>8</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>10</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>12</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>13</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>14</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>31</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;</string>
+     </property>
+    </widget>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QGroupBox" name="groupBox_3">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>50</y>
-      <width>31</width>
-      <height>22</height>
+      <x>90</x>
+      <y>120</y>
+      <width>251</width>
+      <height>51</height>
      </rect>
     </property>
-    <property name="text">
-     <string>&gt;&gt;</string>
+    <property name="title">
+     <string>Photomultiplier index</string>
     </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>90</y>
-      <width>31</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>&lt;&lt;</string>
-    </property>
+    <widget class="QSpinBox" name="phm_index">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>20</y>
+       <width>91</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>384</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>20</y>
+       <width>31</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>^</string>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>
