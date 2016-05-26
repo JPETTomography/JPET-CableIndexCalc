@@ -1,3 +1,6 @@
+Application for calculating indexes of slots, photomultipliers, HV channels for big-barrel J-PET setup
+======================================================================================================
+
 How to use
 ==========
 
